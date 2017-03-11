@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import './css/react-equation-editor.css';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import ReactEquationEditor from "./ReactEquationEditor";
 
-class ReactEquationEditor extends Component {
-    render() {
-        return (
-            <h1>React Equation Editor.</h1>
-        )
-    }
-}
-
-export default ReactEquationEditor;
+ReactDOM.render(
+    <ReactEquationEditor/>,
+    document.getElementById("root")
+);
