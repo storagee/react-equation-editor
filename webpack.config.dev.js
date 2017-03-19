@@ -29,5 +29,8 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    externals: {
+        'MathJax': 'MathJax'
+    }
 };
